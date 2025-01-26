@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片居中</title>
+    <style>
+        /* 使用 flexbox 来居中对齐 */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* 横向居中 */
+            align-items: center;     /* 纵向居中 */
+            background-color: #f0f0f0; /* 可选，设置背景色 */
+        }
+
+        img {
+            max-width: 90%;  /* 图片最大宽度为视口宽度的 90% */
+            max-height: 80%; /* 图片最大高度为视口高度的 80% */
+            object-fit: contain; /* 保持图片比例，填充空白区域 */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgs.ovh/2025/01/26/UFrO.jpeg" alt="居中的图片">
+</body>
+</html>
