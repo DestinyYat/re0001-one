@@ -32,6 +32,8 @@ config_attempt*.json
 
 # ____
 *.dofile
+*.ctl
+*.def
 *.v 
 **/input/
 **/outdated/
