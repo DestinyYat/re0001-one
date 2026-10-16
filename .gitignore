@@ -28,3 +28,11 @@ proceed/
 *.rpt
 agent_report.json
 config_attempt*.json
+
+
+# ____
+.dofile
+.v 
+**/input/
+**/outdated/
+
