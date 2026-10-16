@@ -1,0 +1,30 @@
+# 系统临时、系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+*.bak
+
+# ========== 新增 EDA case 项目过滤规则 ==========
+# 1. Python 编译缓存（所有目录下的__pycache__）
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 2. 所有case的输出目录（核心！output、output_v2、outdated全部忽略）
+case*/output/
+case*/output_v*/
+case*/outdated/
+
+# 3. 临时网页文件夹
+proceed/
+
+# 4. 【可选】如果你不想忽略input下面的东西，不要写case*/input/，input下的.v/lib/md/dofile保留入版本
+#    input目录是测试用例原始输入，属于代码仓库，不忽略！
+
+# 5. 运行报告、临时json输出文件（兜底防护，如果output目录没写全）
+*.rpt
+agent_report.json
+config_attempt*.json
